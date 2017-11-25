@@ -2,8 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Vibration, WebView, Linking, } from 'react-native';
 import { Constants } from 'expo';
 
-import GitHub_corner from './assets/GitHub_corner.html';
-
 export default class App extends React.Component {
   render() {
     return (
@@ -45,8 +43,8 @@ export default class App extends React.Component {
                 ],
               )}}
           >
-            <WebView style={styles.corner}
-              source={GitHub_corner}
+            <Image style={styles.corner}
+              source={require('./assets/GitHubCorner.png')}
             />
           </View>
 
