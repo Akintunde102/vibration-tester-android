@@ -27,9 +27,7 @@ export default class App extends React.Component {
               color='#000'
               onPress={() => {Alert.alert(
                   'Made by Jack Paine, 2017',
-                  {'A simple Android app for testing the vibration motors on mobile phones.\n
-                  \n
-                  This app is open-source. Click the GitHub icon in the right corner to view the source.'}
+                  'A simple Android app for testing the vibration motors on mobile phones.\n\nThis app is open-source! Click the GitHub icon in the right corner to view the source and contribute.'
               )}}
             />
         </View>
