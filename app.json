@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "vibration-tester",
-    "description": "An empty new project",
+    "description": "A simple Android app for testing the vibration motors on mobile phones.",
     "slug": "vibration-tester",
     "privacy": "public",
     "sdkVersion": "23.0.0",
@@ -12,7 +12,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#00d070"
     },
     "ios": {
       "supportsTablet": true
