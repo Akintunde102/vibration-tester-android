@@ -7,7 +7,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz"
   },
   "name": "vibration-tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Android app for testing the vibration motors on mobile phones.",
   "author": null
 }

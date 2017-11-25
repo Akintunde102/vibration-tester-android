@@ -16,7 +16,8 @@
     },
     "android": {
       "package": "com.kapito.vibrationtester",
-      "permissions": []
+      "permissions": [],
+      "versionCode": 2,
     }
   }
 }
