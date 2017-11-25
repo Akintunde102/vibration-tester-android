@@ -24,6 +24,7 @@ export default class App extends React.Component {
 
             <View style={styles.infoButton}>
             <Button title='info'
+              color='#000'
               onPress={() => {Alert.alert(
                   'Made by Jack Paine, 2017',
                   'A simple Android app for testing the vibration motors on mobile phones. This app is open-source and available on GitHub: https://github.com/kapito/vibration-tester-android'
@@ -95,11 +96,8 @@ const styles = StyleSheet.create({
 
   infoButton: {
     position: 'absolute',
-    fontSize: 24,
-    color: '#fff',
-    top: 0,
-    left: 5,
-    fontWeight: 'bold',
+    top: 15,
+    left: 15,
   },
 
   corner: {
