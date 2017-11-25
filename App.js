@@ -7,7 +7,8 @@ export default class App extends React.Component {
       <View
         style={styles.container}
         onStartShouldSetResponder={() => true}
-        onResponderStart={() => {Vibration.vibrate(500)}}
+        onResponderStart={() => {Vibration.vibrate(99999)}}
+        onResponderRelease={() => {Vibration.cancel()}}
       >
       </View>
     );
