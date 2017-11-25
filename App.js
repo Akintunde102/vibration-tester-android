@@ -8,6 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
 
+
       <View style={styles.container}>
 
         <View style={styles.statusBar}></View>
@@ -18,47 +19,48 @@ export default class App extends React.Component {
           onResponderRelease={() => {Vibration.cancel()}}
         >
 
-            <Text style={styles.instructionText}>
-              Tap and hold anywhere to test vibration motor
-            </Text>
+          <Text style={styles.instructionText}>
+            Tap and hold anywhere to test vibration motor
+          </Text>
 
-            <View style={styles.infoButton}>
+          <View style={styles.infoButton}>
             <Button title='info'
               color='#000'
               onPress={() => {Alert.alert(
-                  'Made by Jack Paine, 2017',
-                  'A simple Android app for testing the vibration motors on mobile phones.\n\nThis app is open-source! Click the GitHub icon in the right corner to view the source and contribute.'
+                'Made by Jack Paine, 2017',
+                'A simple Android app for testing the vibration motors on mobile phones.\n\nThis app is open-source! Click the GitHub icon in the right corner to view the source and contribute.'
               )}}
             />
-        </View>
+          </View>
 
-            <View style={styles.corner}
-              onStartShouldSetResponder={() => true}
-              onResponderStart={() => {
-                Alert.alert(
-                  'View source on GitHub?',
-                  'This will open the GitHub repository in your default web browser. Continue?',
-                  [
-                    {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
-                    {text: 'OK', onPress: () => {Linking.openURL('https://github.com/kapito/vibration-tester-android');}},
-                  ],
-                )}
-              }
-            >
-                <WebView style={styles.corner}
-                  source={GitHub_corner}
-                />
-            </View>
+          <View style={styles.corner}
+            onStartShouldSetResponder={() => true}
+            onResponderStart={() => {
+              Alert.alert(
+                'View source on GitHub?',
+                'This will open the GitHub repository in your default web browser. Continue?',
+                [
+                  {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                  {text: 'OK', onPress: () => {Linking.openURL('https://github.com/kapito/vibration-tester-android');}},
+                ],
+              )}}
+          >
+            <WebView style={styles.corner}
+              source={GitHub_corner}
+            />
+          </View>
 
         </View>
 
       </View>
+
 
     );
   }
 }
 
 const styles = StyleSheet.create({
+
 
   container: {
     flex: 1,
@@ -108,5 +110,6 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: '#00d070',
   },
+
 
 });
