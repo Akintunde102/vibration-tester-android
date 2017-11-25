@@ -10,6 +10,11 @@ export default class App extends React.Component {
         onResponderStart={() => {Vibration.vibrate(99999)}}
         onResponderRelease={() => {Vibration.cancel()}}
       >
+        <Text
+          style={styles.instructiontext}
+        >
+          Tap and hold anywhere to test vibration motor
+        </Text>
       </View>
     );
   }
@@ -18,8 +23,16 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#00d070',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  instructiontext: {
+    fontSize: 40,
+    color: '#fff',
+    marginLeft: 50,
+    marginRight: 50,
+    textAlign: 'center',
   },
 });
