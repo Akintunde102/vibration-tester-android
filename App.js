@@ -26,7 +26,7 @@ export default class App extends React.Component {
         </Text>
 
         <Text style={styles.motto}>
-          info
+          Source available on GitHub
         </Text>
 
       </View>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 
   instructionText: {
     position: 'relative',
-    fontSize: 36,
+    fontSize: 38,
     color: '#fff',
     marginLeft: 50,
     marginRight: 50,
@@ -57,10 +57,20 @@ const styles = StyleSheet.create({
     position: 'absolute',
     fontSize: 24,
     color: '#fff',
-    top: 25,
+    top: 23,
     right: 5,
     fontWeight: 'bold',
     textDecorationLine: 'underline',
+  },
+
+  motto: {
+    position: 'absolute',
+    fontSize: 18,
+    color: '#fff',
+    bottom: 5,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
   },
 
 });
