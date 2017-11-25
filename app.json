@@ -15,7 +15,8 @@
       "backgroundColor": "#00d070"
     },
     "android": {
-      "package": "com.kapito.vibrationtester"
+      "package": "com.kapito.vibrationtester",
+      "permissions": []
     }
   }
 }

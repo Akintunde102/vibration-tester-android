@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, Vibration, WebView, Linking, } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, Vibration, Image, Linking, } from 'react-native';
 import { Constants } from 'expo';
 
 export default class App extends React.Component {
