@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "vibration-tester",
+    "name": "Vibration Tester",
     "description": "A simple Android app for testing the vibration motors on mobile phones.",
     "slug": "vibration-tester",
     "privacy": "public",
@@ -14,8 +14,8 @@
       "resizeMode": "cover",
       "backgroundColor": "#00d070"
     },
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.kapito.vibrationtester"
     }
   }
 }
